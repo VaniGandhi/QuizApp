@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topselection"
+        android:orientation="horizontal">
+
+        <include layout="@layout/topselectionbarbooster"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topselection"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"
+        android:id="@+id/backbooster"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boostertext"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topselection"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/booster"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/allbg"
+        android:layout_below="@id/boostertext"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:layout_marginLeft="13dp"
+            >
+
+            <include layout="@layout/booster_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/boosterthree"/>
+            <include layout="@layout/booster_layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/boosterfive"/>
+            <include layout="@layout/booster_layout10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/boosterten"/>
+            <include layout="@layout/booster_layout15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/boosterfifteen"/>
+
+
+
+
+
+
+        </GridLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

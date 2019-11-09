@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quiz.quizapp1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".QuizApp.QuizApp.Launch_Screen"></activity>
+        <activity android:name=".QuizApp.QuizApp.Coins" />
+        <activity android:name=".QuizApp.QuizApp.Frame_Activity" />
+        <activity
+            android:name=".QuizApp.QuizApp.Result_Screen"
+            android:launchMode="singleTask" />
+        <activity android:name=".QuizApp.QuizApp.Booster" />
+        <activity android:name=".QuizApp.QuizApp.GamePlayingScreen" />
+        <activity android:name=".QuizApp.QuizApp.Login_Activity" />
+        <activity android:name=".QuizApp.QuizApp.ErrorScreen2" />
+        <activity
+            android:name=".QuizApp.QuizApp.Error_Screen"
+            android:noHistory="true" />
+        <activity android:name=".QuizApp.QuizApp.Main_Screen" />
+        <activity
+            android:name=".QuizApp.QuizApp.Enter_name"
+            android:launchMode="singleTask" />
+        <activity android:name=".QuizApp.QuizApp.GetOtp" />
+        <activity android:name=".QuizApp.QuizApp.OTPactivity" />
+        <activity android:name=".QuizApp.LoginActivity" />
+        <activity android:name=".QuizApp.SignupActivity" />
+        <activity android:name=".QuizApp.NewProject.list_Activity_demo"
+            android:configChanges="orientation|screenLayout|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

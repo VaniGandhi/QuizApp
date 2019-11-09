@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.Enter_name"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aisehi"
+        android:src="@drawable/popupp"
+      android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="25dp"
+        >
+    </ImageView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Enter your name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/enter_username"
+        android:layout_centerInParent="true"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="20"
+        android:maxLines="1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_username"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nextbutton"
+
+
+
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btnnext" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizApp.QuizApp.Frame_Activity"
+    android:background="@drawable/stbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/topselect1"
+        android:orientation="horizontal">
+
+        <include layout="@layout/top_selectionbarcoin"/>
+    </LinearLayout>
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/topselection"
+        android:scaleType="fitXY"
+        android:id="@+id/topselect1"
+        />-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topselect1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/backcoin"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coinstext"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topselect1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/coinstext"/>
+
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/allbg"
+    android:layout_below="@id/coinstext"
+
+    android:layout_centerHorizontal="true"
+  >
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="center"
+
+       android:columnCount="2"
+       android:layout_marginLeft="15dp"
+       >
+
+       <include layout="@layout/box_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:id="@+id/coin50"/>
+       <include layout="@layout/box_layout2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/coin100"/>
+       <include layout="@layout/box_layout3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:id="@+id/coin250"/>
+       <include layout="@layout/box_layout4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/coin500"/>
+
+
+
+
+
+
+   </GridLayout>
+
+
+
+</ScrollView>
+
+
+</RelativeLayout>

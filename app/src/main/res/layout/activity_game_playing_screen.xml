@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg_color"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.GamePlayingScreen">
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/path66"
+            android:id="@+id/topburger"/>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/rankbg"
+      android:layout_marginTop="6dp"
+        android:layout_alignRight="@id/topburger" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/example_profilpic_cover_left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/clock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/countdown"
+        android:textSize="25sp"
+  />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="10dp"
+       android:orientation="horizontal"
+       android:layout_below="@id/clock"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/barlinearlayout"
+       >
+       <ProgressBar
+           android:progressDrawable="@drawable/redprogressbar"
+           style="?android:attr/progressBarStyleHorizontal"
+
+           android:id="@+id/xpbarred"
+
+           android:max="100"
+           android:min="0"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           />
+       <ProgressBar
+           android:progressDrawable="@drawable/blueprogressbar"
+           style="?android:attr/progressBarStyleHorizontal"
+
+           android:id="@+id/xpbarblue"
+
+           android:max="100"
+           android:min="0"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           />
+
+
+
+
+   </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/path66"
+        android:id="@+id/topburgeright"/>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/rankbg"
+        android:layout_marginTop="6dp"
+        android:layout_alignRight="@id/topburger"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/example_profilpic_cover_left"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/questionbackground"
+        android:layout_below="@id/barlinearlayout"
+        android:layout_marginTop="18dp"
+        android:id="@+id/questionbg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/barlinearlayout"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:id="@+id/question"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twooption1"
+        android:orientation="horizontal"
+        android:layout_below="@id/questionbg"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/A">
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/option1"
+             android:padding="8dp"
+             android:textSize="15sp"
+             android:textStyle="bold"
+
+             android:textColor="@android:color/black"
+
+             android:gravity="center"
+            />
+
+          </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            app:cardPreventCornerOverlap="true"
+
+
+
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/B">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/option2"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+             android:gravity="center"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twooption3"
+        android:orientation="horizontal"
+        android:layout_below="@id/twooption1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            app:cardPreventCornerOverlap="true"
+
+
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            app:cardCornerRadius="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/C">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/option3"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+
+            android:layout_marginLeft="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/D">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/option4"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grouponefivenine"
+    android:layout_alignParentBottom="true"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bomb"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/bomb"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:src="@drawable/gpscoin"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="15dp"
+
+
+
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            android:layout_marginTop="5dp"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gpscoin"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/coins"
+            android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+</RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/violet"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

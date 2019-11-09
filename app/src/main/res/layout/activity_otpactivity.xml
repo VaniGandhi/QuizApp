@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.OTPactivity"
+    android:background="@drawable/bg"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/writeyournumber"
+        android:src="@drawable/popup"
+        android:layout_centerInParent="true"
+
+  android:padding="27dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout2"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/ccp"
+            android:onClick="onCountryPickerClick"
+            android:background="@drawable/curvedlefteditetxt"
+
+
+
+            android:textAlignment="center"></com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:hint="(###) ###-####"
+            android:maxLines="1"
+
+            android:id="@+id/enternumber"
+            android:background="@drawable/curvedrightedittext"
+            android:layout_marginRight="30dp"
+
+
+            android:inputType="number"
+           android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:maxLength="10"
+
+
+
+            />
+
+    </LinearLayout>
+
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btnnext"
+
+ android:layout_centerHorizontal="true"
+    android:layout_below="@id/linearlayout2"
+    android:id="@+id/btnnext"
+
+
+    android:layout_marginTop="55dp"
+    android:inputType="number"
+    />
+
+</RelativeLayout>

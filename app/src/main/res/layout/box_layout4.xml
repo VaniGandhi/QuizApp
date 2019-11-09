@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/itembg"
+        android:orientation="vertical"
+        android:id="@+id/l4"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assetfivestore"
+            android:layout_marginTop="-30dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fivehundredcoins"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ten"
+        android:layout_below="@id/l4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+
+        />
+</RelativeLayout>

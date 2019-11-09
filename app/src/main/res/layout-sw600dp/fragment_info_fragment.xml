@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizApp.NewProject.Info_fragment"
+    android:orientation="vertical">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+  <LinearLayout
+
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/layoutid"
+      android:orientation="horizontal"
+      android:layout_marginLeft="20dp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idtext"
+        android:text="Id:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idedit"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
+        android:maxLength="28"
+        android:inputType="text"
+        />
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/layoutname"
+      android:orientation="horizontal"
+      android:layout_below="@id/layoutid"
+      android:layout_marginLeft="20dp"
+      android:textColor="@android:color/black"
+
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nametext"
+        android:text="Name:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameedit"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
+        android:maxLength="28"
+         android:inputType="text"
+
+        />
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/layoutaddress"
+      android:orientation="horizontal"
+      android:layout_below="@id/layoutname"
+      android:layout_marginLeft="20dp"
+
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addresstext"
+        android:text="Address:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressedit"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
+        android:maxLength="28"
+        android:inputType="text"
+        />
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/layoutphoneno"
+      android:orientation="horizontal"
+      android:layout_below="@id/layoutaddress"
+      android:layout_marginLeft="20dp"
+
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenotext"
+        android:text="Phone no:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneedit"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
+        android:maxLength="28"
+        android:inputType="text"
+        />
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/layoutemail"
+      android:orientation="horizontal"
+      android:layout_below="@id/layoutphoneno"
+      android:layout_marginLeft="20dp"
+
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailtext"
+        android:text="Email:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailedit"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/colorAccent"
+         android:maxLines="1"
+        android:maxLength="28"
+        
+
+        />
+
+
+  </LinearLayout>
+ <ImageView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:src="@drawable/ic_mode_edit_black_24dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/edit_data"
+      />
+  <Button
+      android:layout_width="100dp"
+      android:layout_height="50dp"
+      android:text="Done"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_below="@id/layoutemail"
+      android:layout_marginLeft="20dp"
+      android:id="@+id/buttondone"/>
+    </RelativeLayout>
+  </ScrollView>
+
+</RelativeLayout>

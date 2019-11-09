@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.Main_Screen"
+    android:background="@drawable/bg"
+
+    android:fitsSystemWindows="true">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar"
+        android:id="@+id/topbar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="6dp">
+
+   <ImageView
+       android:layout_width="110dp"
+       android:layout_height="30dp"
+       android:background="@drawable/addcoin"
+       android:id="@+id/addcoins"
+
+
+      />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/coinstext"
+            android:textSize="16sp"
+            android:layout_marginLeft="36dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:lines="1"
+
+
+
+
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/coins"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rocket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/countdownbooster"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/settingsicontopright"
+            android:background="@drawable/settingicon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="15dp"
+
+            />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:layout_below="@+id/topbar"
+    android:layout_marginTop="50dp"
+   android:layout_centerHorizontal="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+    android:id="@+id/threebuttons"
+    >
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn1bg"
+                android:drawableRight="@drawable/play_button"
+                android:id="@+id/play"
+               />
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn2bg"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/awardicon"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn3bg"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnleader"
+        android:layout_above="@id/bottom_bar"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"/>
+<!--
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/storebg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"  />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/coin" />
+
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_bar"
+            android:background="@drawable/bottombar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-14dp"
+            android:layout_marginBottom="-12dp">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="18dp"
+                android:id="@+id/burger"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/example_profilpic_cover"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="30dp"/>
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/rankbg"
+                android:layout_marginLeft="77dp"
+                android:layout_marginTop="18dp"
+
+                />
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/rank"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="17dp"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+
+                android:textColor="@color/white"
+
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/xptext"/>
+
+            <ProgressBar
+                android:id="@+id/xpbar"
+                style="?android:attr/progressBarStyleHorizontal"
+
+                android:layout_width="80dp"
+
+                android:layout_height="10dp"
+                android:layout_marginLeft="94dp"
+                android:layout_marginTop="60dp"
+                android:max="100"
+                android:min="0"
+                android:progressDrawable="@drawable/custom_progress_dialog"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/xpbar"
+                android:layout_marginLeft="100dp"
+
+                android:layout_marginTop="54dp"
+
+
+
+                android:src="@drawable/lvlbg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/xpbar"
+                android:layout_marginTop="55dp"
+                android:id="@+id/level"
+
+                android:layout_marginRight="6dp"
+
+
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/storebg"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:id="@+id/store"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coin"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="35dp"
+                android:id="@+id/coin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coin"
+                android:layout_alignParentRight="true"
+                android:text="STORE"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

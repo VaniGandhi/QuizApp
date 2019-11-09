@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.GetOtp"
+    android:background="@drawable/bg">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aisehi"
+        android:src="@drawable/pop_up"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_centerInParent="true"
+
+        android:orientation="vertical"
+        android:id="@+id/l2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/enter_otp"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_edittext"
+            android:hint="Enter 6 digit code"
+           android:paddingLeft="20dp"
+            android:inputType="number"
+            android:maxLength="6"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/over"
+            android:layout_marginTop="20dp"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="time"
+                android:textSize="20dp"
+                android:id="@+id/countdowntimer"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnagain"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sendagain"
+            />
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnback"
+            android:id="@+id/backbtn"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/l2"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentLeft="true"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnnext"
+            android:id="@+id/nextbtn"
+            android:layout_below="@id/l2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+
+
+
+</RelativeLayout>

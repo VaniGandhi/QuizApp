@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quiz.quizapp1.QuizApp.QuizApp.Result_Screen"
+    android:background="@drawable/group1164">
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+      android:layout_centerInParent="true"
+        android:padding="20dp"
+
+        android:src="@drawable/resultscreen_bg" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/crown"
+        android:layout_marginLeft="85dp"
+
+        android:id="@+id/crown"
+        android:layout_marginTop="180dp"
+
+
+
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="5dp"
+        android:src="@drawable/path66"
+        android:id="@+id/topburger"
+        android:layout_below="@id/crown"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/rankbg"
+        android:layout_below="@id/crown"
+        android:layout_marginTop="5dp"
+
+        android:layout_alignRight="@id/topburger" />
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_alignRight="@id/topburger"
+            android:gravity="center"
+            android:layout_below="@id/crown"
+            android:id="@+id/rank1"
+
+            android:textColor="@android:color/black"
+            android:layout_marginRight="3dp"
+
+            android:textStyle="bold"
+
+            android:text="5"
+
+
+
+            />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/example_profilpic_cover"
+        android:layout_marginTop="-39dp"
+        android:layout_below="@id/topburger"/>
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/topburger"
+    android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="wwqeq"
+            android:layout_below="@id/topburger"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/topburger"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/barlinearlayout"
+        android:layout_marginTop="5dp"
+        >
+        <ProgressBar
+            android:progressDrawable="@drawable/redprogressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:id="@+id/xpbarred"
+
+            android:max="100"
+            android:min="0"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shield_icon"
+        android:layout_below="@id/barlinearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/shield"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_layout"
+        android:orientation="horizontal"
+        android:layout_below="@id/shield"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star4"
+            android:id="@+id/star1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star4"
+            android:id="@+id/star2"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star4"
+            android:id="@+id/star3"
+            />   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star4"
+        android:id="@+id/star4"
+        />
+
+    </LinearLayout>
+
+        <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+            android:layout_below="@id/star_layout"
+            android:layout_centerHorizontal="true"
+           android:background="@drawable/group1163"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/bottombar"
+
+             >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xp"
+                android:src="@drawable/xp"
+                android:layout_marginLeft="10dp"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:id="@+id/incrzxp"
+                android:layout_below="@id/star_layout"
+                android:layout_marginBottom="3dp"
+                />
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg2"
+        android:src="@drawable/group1161"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/next_button"/>
+
+</RelativeLayout>

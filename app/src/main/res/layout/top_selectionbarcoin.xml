@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selectionbg"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:id="@+id/ctop1"
+        android:background="@drawable/selected"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coins"
+          android:layout_alignParentLeft="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lines"
+        android:layout_below="@id/ctop1"
+        android:id="@+id/ctop2"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/frame"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/lines"
+        android:layout_below="@id/ctop2"
+        android:id="@+id/ctop3"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rocket2"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
